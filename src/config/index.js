@@ -3,5 +3,5 @@ module.exports = {
     "DIR": __dirname,
     dbconf: "mongodb://adworks:123QWE456RTY@34.122.170.201:27017/raffles?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-256",
     USER_SESSION_TIME: 900,
-    test: "mongodb://localhost:27017/aptos_raffles?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000",
+    test: "mongodb://localhost:27017/game_wl-raffles?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000",
 }
