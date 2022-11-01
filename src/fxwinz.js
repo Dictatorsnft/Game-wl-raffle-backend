@@ -34,12 +34,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ type: "application/json" }));
 app.use(bodyParser.raw({ type: "application/vnd.custom-type" }));
 app.use(bodyParser.text({ type: "text/html" }));
-app.use(express.static(dir.dirname + "/client"));
+app.use(express.static(dir.dirname + "/public"));
 app.use(express.static(path.join(__dirname, "upload")));
 
 app.use("/api", routes);
 
-app.get("*", (req, res) => res.sendFile(dir.dirname + "/client/index.html"));
+app.get("*", (req, res) => res.sendFile(dir.dirname + "/public/index.html"));
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
